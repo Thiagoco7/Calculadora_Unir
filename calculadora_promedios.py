@@ -1,7 +1,7 @@
 """Trabajo 1: Sintaxis Python
 Calculadora Promedios"""
 
-UMBR_APRO = 70.0
+UMBR_APRO = 5.0
 
 """ Funcion de Solicitud Calificación"""
 def solicitar_calificacion():
