@@ -1,7 +1,7 @@
 """Trabajo 1: Sintaxis Python
 Calculadora Promedios"""
 
-UMBR_APRO = 5.0;
+UMBR_APRO = 70.0
 
 """ Funcion de Solicitud Calificación"""
 def solicitar_calificacion():
@@ -17,13 +17,13 @@ def solicitar_calificacion():
 
         if 0 <= calificacion <= 10:
             return calificacion
-        print(" La calificación ingresada no esta en el rando entre 0 y 10. ")
+        print(" La calificación ingresada no esta en el rango entre 0 y 10. ")
 
 """ Funcion Confirmación"""
 def confirmar():
     """Solicitud ingreso nuevas materias. Booleano."""
     while True:
-        respuesta = input(" Desear agregar otra materia? Responda (S/N):").strip().lower()
+        respuesta = input(" Desea, agregar otra materia? Responda (S/N):").strip().lower()
         if respuesta == "s":
             return True
         if respuesta == "n":
@@ -36,8 +36,8 @@ def ingresar_calificaciones():
     materias = []
     calificaciones = []
 
-    print("\nPor favor ingrese, los datos las materias.")
-    print("Ingrese unicamente el nombre y presione Enter para terminar\n")
+    print("\nPor favor ingrese, los datos de las materias.")
+    print("Ingrese los datos de las materias y presione Enter para terminar\n")
 
     while True:
         nombre = input("Materia: ").strip()
@@ -78,7 +78,7 @@ def determinar_estado(calificaciones, umbral=5.0):
 
     return aprobadas, reprobadas
 
-""" """
+""" Validar Calificaciones altas y bajas"""
 def encontrar_extremos(calificaciones):
     """Retorna la calificación más alta y la mas baja."""
     if len(calificaciones) == 0:
